@@ -1,0 +1,24 @@
+{% for sensor in airquality_sensors %}{{ metric_prefix }}_airquality{name="{{ sensor.name|safe }}"} {{ sensor.value }}
+{% endfor %}
+{% for sensor in battery_sensors %}{{ metric_prefix }}_battery{name="{{ sensor.name|safe }}"} {{ sensor.value }}
+{% endfor %}
+{% for sensor in contact_sensors %}{{ metric_prefix }}_contact{name="{{ sensor.name|safe }}"} {{ sensor.value }}
+{% endfor %}
+{% for sensor in humidity_sensors %}{{ metric_prefix }}_humidity{name="{{ sensor.name|safe }}"} {{ sensor.value }}
+{% endfor %}
+{% for sensor in motion_sensors %}{{ metric_prefix }}_motion{name="{{ sensor.name|safe }}"} {{ sensor.value }}
+{% endfor %}
+{% for sensor in power_sensors %}{{ metric_prefix }}_power{name="{{ sensor.name|safe }}"} {{ sensor.value }}
+{% endfor %}
+{% for sensor in presence_sensors %}{{ metric_prefix }}_presence{name="{{ sensor.name|safe }}"} {{ sensor.value }}
+{% endfor %}
+{% for sensor in temperature_sensors %}{{ metric_prefix }}_temperature{name="{{ sensor.name|safe }}"} {{ sensor.value }}
+{% endfor %}
+{% for sensor in valve_sensors %}{{ metric_prefix }}_valve{name="{{ sensor.name|safe }}"} {{ sensor.value }}
+{% endfor %}
+{% for sensor in water_sensors %}{{ metric_prefix }}_water{name="{{ sensor.name|safe }}"} {{ sensor.value }}
+{% endfor %}
+{% for hvac in hvacs %}{{ metric_prefix }}_hvac{name="{{ hvac.name|safe }}"} {{ hvac.value }}
+{% endfor %}
+{% for flume in flumes %}{{ metric_prefix }}_flume{name="{{ flume.name|safe }}"} {{ flume.value }}
+{% endfor %}
